@@ -1,1 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <titie> This has to fkn work </titie>
+    <link rel="stylesheet" href="index.style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <header>
+      <!-- navbar, social media icons, webpages, logo -->
+
+        <!-- top navbar with logo -->
+        <div class="top-navbar">
+
+          <div class="logo">
+            <a href="index.html"> <img src="#" alt="JB Fireside"/> </a>
+            <!-- insert logo -->
+          </div>
+
+          <!-- botttom navbar -->
+          <nav class="main-nav">
+            <div class="nav-container">
+
+              <ul>
+                <li>
+                  <a href="index.html" class="active">
+                    <i class="fas fa-home"> </i>
+                    <span> Home </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="about.html" class="active">
+                    <i class="fas fa-info-circle"> </i>
+                    <span> About JB </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="menu.html">
+                    <i class="fas fa-utensils"> </i>
+                    <span> JB's Menu </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="contact.html">
+                    <i class="fas fa-envelope"> </i>
+                    <span> Contact JB </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="location.html">
+                    <i class="fas fa-map-marker-alt"> </i>
+                    <span> Where to Find JB </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <!-- social media and hamburger in one container (hamburger = icon for mobile) -->
+          <div class="right-icons">
+
+            <div class="social-media">
+              <a href="https://facebook.com/profile.php?id=61551356499522" target="_blank">
+                <i class="fab fa-facebook-f"> </i>
+              </a>
+
+              <a href="https://www.instagram.com/jbfireside/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+
+              <a href="https://wwww.tiktok.com/@jbfiresiderestaur" target="_blank">
+                <i class="fab fa-tiktok"> </i>
+                <!-- the profile still can't be edited so we'll just have to work with it or make a new account -->
+              </a>
+            </div>
+
+            <!-- hamburger menu for mobile -->
+            <div class="menu-toggle" id="menu-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <!-- fullscreen overlay menu -->
+          <div class="overlay-menu" id="overlay-menu">
+            <div class="close-overlay" id="close-overlay"> &times; </div>
+
+            <ul>
+              <li>
+                <a href="index.html" class="active">
+                  <i class="fas fa-home"> </i>
+                  <span> Home </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="about.html" class="active">
+                  <i class="fas fa-info-circle"> </i>
+                  <span> About JB </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="menu.html" class="active">
+                  <i class="fas fa-cicle"> </i>
+                  <span> Contact JB </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="contact.html" class="active">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span> Where to Find JB </span>
+                </a>
+              </li>
+            </ul>
+          </div>        
+        </div>
+    </header>
+
+    <main>
+      <!-- main content -->
+      <section class="hero-image">
+        <img src="#" alt="JB Firesie"/>
+        <!-- this could be an image of the current food truck or food -->
+
+        <!-- overlay container for the header -->
+        <div class="hero-overlay">
+
+          <h1> Welcome to JB Fireside!!! </h1>
+          <p> A Yah Suh Nice <span> 💯 </span> </p>
+
+          <div class="hero-button">
+            <button type="button" onclick="location.href='menu.html'">
+              <i class="fas fa-utensils"> </i>
+              View Menu
+            </button>
+
+            <button type="button" onclick="location.href='contact.html'">
+              <i class="fas fa-envelope"> </i>
+              Contact JB
+            </button>
+          </div>
+
+          <!-- social media icons -->
+          <div class="social-media">
+            <a href="https://facebook.com/profile.php?id=61551356499522" target="_blank">
+              <i class="fab fa-facebook-f"> </i>
+            </a>
+
+            <a href="https://www.instagram.com/jbfireside/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://wwww.tiktok.com/@jbfiresiderestaur" target="_blank">
+              <i class="fab fa-tiktok"> </i>
+              <!-- the profile still can't be edited so we'll just have to work with it or make a new account -->
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="intro" class="intro-section">
+        <h2> Fuel to Your Fire 🔥 </h2>
+          <p> 🔥Bringing the heat with authentic Jamaican flavor - bold, fresh, and unforgettable! </p>
+          <p> From sizzling Jerk Chicken to savory Curry Goat, every bite is a taste of the islands you won't forget. Come experience the true fire of JB Fireside 🔥 </p>
+      </section>
+
+      <section id="top-rated" class="top-rated-section">
+        <h2> Customer's Favorite Dishes </h2>
+
+        <div class="dish-list">
+
+          <article>
+            <img src="#" alt="🔥 Jerk Chicken"/>
+            <h3>
+              <i class="fas fa-fire"> </i>
+              Jerk Chicken Plate
+              <i class="fas fa-pepper-hot"> </i>
+            </h3>
+            <p> Spicy, smoky, and perfectly grilled - a true island classic! </p>
+            <span> $16.00 </span>
+          </article>
+
+          <article>
+            <img src="#" alt="💯 Oxtail & BEans"/>
+            <h3>
+              <i class="fas fa-fire"> </i>
+              Octail & Beans Plate
+            </h3>
+            <p> Slow-cooked, tender oxtails simmered with hearty beans and savory spices. </p>
+            <span> $24.00 </span>
+          </article>
+
+          <article>
+            <img src="#" alt="🔥 Curry Goat"/>
+            <h3>
+              <i class="fas fa-fire"> </i>
+              Curry Goat Plate
+              <i class="fas fa-pepper-hot"> </i>
+            </h3>
+            <p> Rich, tender, and bursting with bold Caribbean spices. </p>
+            <span> $22.00 </span>
+          </article>
+
+          <div class="menu-button-container">
+            <a href="menu.html" class="view-menu-btn">
+              <i class="fas fa-book-open"> </i>
+              Full Menu
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery-section">
+        <h2> Gallery of Flavor 🔥 </h2>
+
+        <div class="gallery-grid">
+
+          <div class="gallery-item">
+            <img src="#" alt="Dish 1"/>
+            <!-- attempt to format and use customer image -->
+            <span> Dish 1 </span>
+          </div>
+
+          <div class="gallery-item">
+            <img src="#" alt="Dish 2"/>
+            <!-- attempt to format and use customer image -->
+            <span> Dish 2 </span>
+          </div>
+
+          <div class="gallery-item">
+            <img src="#" alt="Dish 3"/>
+            <!-- attempt to format and use customer image -->
+            <span> Dish 3 </span>
+          </div>
+
+          <div class="gallery-item">
+            <img src="#" alt="Dish 4"/>
+            <!-- attempt to format and use customer image -->
+            <span> Dish 4 </span>
+          </div>
+
+          <div class="gallery-item">
+            <img src="#" alt="Dish 5"/>
+            <!-- attempt to format and use customer image -->
+            <span> Dish 5 </span>
+          </div>
+
+          <div class="gallery-item">
+            <img src="#" alt="Dish 6"/>
+            <!-- attempt to format and use customer image -->
+            <span> Dish 6 </span>
+          </div>
+        </div>
+      </section>
+      <!-- reviews will be added later -->
+    </main>
+
+    <footer class="main-footer">
+
+      <!-- footer content, social buttons, icons, webpage shortcuts -->
+      <div class="footer-container">
+
+        <!-- column 1 -->
+        <div class="footer-column about">
+          <h3> JB Fireside </h3>
+          <p> Bold Jamaican flavor served hot and fresh from the fire. We bring the talent to your plate - every bite, every time. </p>
+        </div>
+
+        <!-- column 2 -->
+        <div class="footer-column shortcuts">
+          <h3> Shortcuts </h3>
+
+          <ul>
+            <li>
+              <a href="index.html" class="active">
+                <i class="fas fa-home"> </i>
+                <span> Home </span>
+              </a>
+            </li>
+
+            <li>
+              <a href="about.html" class="active">
+                <i class="fas fa-info-circle"> </i>
+                <span> About JB </span>
+              </a>
+            </li>
+
+            <li>
+              <a href="menu.html" class="active">
+                <i class="fas fa-utensiles"> </i>
+                <span> JB's Menu </span>
+              </a>
+            </li>
+
+            <li>
+              <a href="contact.html" class="active">
+                <i class="fas fa-envelope"> </i>
+                <span> Contact JB </span>
+              </a>
+            </li>
+
+            <li>
+              <a>
+                <i class="fas fa-map-marker-alt"> </i>
+                <span> Where to Find JB </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- column 3 -->
+        <div class="footer-column socials">
+          <h3> Connect with JB </h3>
+
+          <div class="social-icons">
+            <a href="https://facebook.com/profile.php?id=61551356499522" target="_blank">
+              <i class="fab fa-facebook-f"> </i>
+            </a>
+
+            <a href="https://www.instagram.com/jbfireside/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="https://wwww.tiktok.com/@jbfiresiderestaur" target="_blank">
+              <i class="fab fa-tiktok"> </i>
+              <!-- the profile still can't be edited so we'll just have to work with it or make a new account -->
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- copyright footer -->
+    <footer class="copyright-footer">
+      <p class="copyright"> &copy; 2025 JB Fireside. All rights reserved. </p>
+    </footer>
+
+    <script src="index.js"> </script>
+  </body>  
+</html>
