@@ -18,9 +18,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px, 40px;
+  padding: 15px 40px;
   background-color: #000000;
-  font-color: white;
+  color: white;
   position: relative;
   z-index: 10;
   width: 100%;
@@ -480,9 +480,9 @@ header {
   font-family: 'Oswald';
 }
 
-.hero-buttons button: hover {
+.hero-buttons button:hover {
   background-color: #cc5200;
-  box-shaow: 0 0 15px #ff6600, 0 0 30px #ff6600;
+  box-shadow: 0 0 15px #ff6600, 0 0 30px #ff6600;
 }
 
 /* responsive behavior for buttons */
@@ -595,7 +595,7 @@ header {
 
 /* top rated section responsive behavior */
 @media (max-width: 768px) {
-  top-rated-section h2 {
+  .top-rated-section h2 {
     font-size: 2rem;
   }
 }
