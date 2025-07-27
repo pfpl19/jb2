@@ -75,6 +75,7 @@ header {
 .top-navbar .social-media a:hover::after {
   transform: translateX(-50%) scaleX(1);
 }
+
 .social-media a {
   color: white;
   font-size: 1.8rem;
