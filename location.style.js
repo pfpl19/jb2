@@ -1,17 +1,15 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const mobileMenu = document.getElementById('mobile-menu');
-  const mobileNav = document.getElementById('mobile-nav');
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.getElementById("mobile-menu");
+  const mobileNav = document.getElementById("mobile-nav");
 
-
-  mobileMenu.addEventListener('click', () => {
-    const isVisible = mobileNav.syle.display === 'flex';
-    mobileNav.style.display = isVisible ? 'none' : 'flex';
+  toggle.addEventListener("click", () => {
+    mobileNav.classList.toggle("open");
   });
 
-  const navLinks = mobileNav.querySelectorAll('a');
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      mobileNav.style.display = 'none';
+  // Optional: Close mobile nav on link click
+  document.querySelectorAll("#mobile-nav a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileNav.classList.remove("open");
     });
   });
 });
