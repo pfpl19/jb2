@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 80%;
+  color: #fff;
+  margin: 0.5em auto;
+  display: block;
+  padding: 0.75em;
+  border: none;
+  border-radius: 5px;
+  background: #111;
+  color: #fff;
+}
+
+.contact-form button {
+  padding: 0.75em 1.25em;
+  background: #ff8c00;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.85);
+  transition: padding 0.3s;
+  z-index: 1000;
+}
+
+.navbar .shrink {
+  padding: 0.5em;
+}
+
+.logo {
+  color: #ffb347;
+  font-weight: 700;
+}
+
+.nav-links a {
+  margin: 0 0.5em;
+  color: #ff8c00;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  color: #ff8c00;
+  font-size: 1.25rem;
+}
+
+.mobile-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2re,;
+  z-index: 1500;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-size: 2em;
+  color: #ff8c00;
+  cursor: pointer;
+}
+
+.footer {
+  background: #0a0a0a;
+  padding: 1em;
+  text-align: center;
+  margin-top: 2em;
+}
+
+@media(max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}
