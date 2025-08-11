@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.8);
+  transition: padding 0.3s;
+  z-index: 1000;
+}
+
+.navbar.shrink {
+  padding: 0.5em;
+}
+
+.logo {
+  font-weight: 700;
+  color: #ffb347;
+  letter-spacing: 1px;
+}
+
+.nav-links a {
+  margin: 0 0.5em;
+  color: #ff8c00;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: #ff8c00;
+}
+
+.mobile-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0b0b0b;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  z-index: 1500;
+}
+
+.mobile-overlay a {
+  color: #ff8c00;
+  font-size: 2em;
+  margin: 0.5em 0;
+  text-decoration: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-size: 2em;
+  color: #ff8c00;
+  cursor: pointer;
+}
+
+.hero {
+  text-align: center;
+  padding: 8em 1em 3em;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1200x500') center/cover no-repeat;
+  background-blend-mode: overlay;
+}
+
+.hero h1 {
+  font-size: 2.6rem;
+  margin: 0 0 0.5rem;
+  color: #ffd27f;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+  margin: 0 0 1rem;
+  color: #f0f0f0;
+}
+
+.hero button {
+  background: #ff8c00;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.reviews {
+  padding: 3em 1em;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.reviews h2 {
+  margin-bottom: 1rem;
+  color: #ffd27f;
+  text-align: center;
+}
+
+.swiper {
+  padding: 1rem 0;
+}
+
+.swiper-slide {
+  background: #111;
+  padding: 2em;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  background: #0a0a0a;
+  padding: 1em;
+  text-align: center;
+  border-top: 1px solid rgba(255, 140, 0, 0.06);
+}
+
+.social-icons a {
+  color: #ff8c00;
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+@media(max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .hero {
+    padding: 6em 1em 2em;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .mobile-overlay a {
+    font-size: 1.6rem;
+  }
+
+  .swiper-slide {
+    padding: 1.25rem;
+    font-size: 0.95rem;
+  }
+}
