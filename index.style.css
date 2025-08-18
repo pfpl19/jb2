@@ -178,10 +178,10 @@ img {
   right: 1rem;
   background: none;
   border: none;
-  color: var(--text);
+  color: var(--accent=3);
   font-size: 2rem;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 2001;
 }
 
 .mobile-drawer a {
