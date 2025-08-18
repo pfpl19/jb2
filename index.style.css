@@ -431,6 +431,11 @@ img {
   .footer-col a {
     display: block;
   }
+
+  .footer .socials {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* no-scroll class */
