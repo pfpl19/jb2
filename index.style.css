@@ -313,6 +313,7 @@ img {
   margin-top: .5rem;
   font-weight: 600;
   color: var(--accent-2);
+  transition: color .2s ease, text-shadow .2s ease;
 }
 
 /* ====== reviews (grid version) ======= */
