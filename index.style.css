@@ -9,10 +9,8 @@
   --border: rgba(255, 255, 255, 0.08);
 }
 
-*{ 
-  box-sizing: border-box
-  html, body {height: 100%}
- }
+* { box-sizing: border-box; }
+html, body { height: 100%; }
 
 body {
   margin: 0;
@@ -23,15 +21,8 @@ body {
   flex-direction: column;
 }
 
-a {
-  color: var(--accent);
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
+a { color: var(--accent); text-decoration: none; }
+img { max-width: 100%; display: block; }
 
 /* skip link */
 .skip-link {
@@ -42,13 +33,12 @@ img {
   height: 1px;
   overflow: hidden;
 }
-
 .skip-link:focus {
   left: 1rem;
   top: 1rem;
   width: auto;
   height: auto;
-  backgorund: #000;
+  background: #000;
   color: #fff;
   padding: .5rem .75rem;
   border-radius: .5rem;
@@ -240,8 +230,8 @@ img {
 }
 
 .card {
-  backgroun: var (--panel);
-  border-box: 1px solid var(--border);
+  background: var (--panel);
+  border: 1px solid var(--border);
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
@@ -260,7 +250,7 @@ img {
   margin: .25rem 0;
 }
 
-.spciy {
+.spicy {
   font-size: 1rem;
   margin-left: .35rem;
 }
@@ -298,7 +288,7 @@ img {
 .cta-strip {
   max-width: 1100px;
   margin: 0 auto 2rem;
-  background: linear-gradient(90deg, rgba(255, 140, 0, .15), rgba(65, 201, 91, .15);
+  background: linear-gradient(90deg, rgba(255, 140, 0, .15), rgba(65, 201, 91, .15));
   border: 1px solid var(--border);
   border-radius: 1rem;
   padding: 1.25rem;
@@ -313,7 +303,7 @@ img {
   display: flex;
   gap: .75rem;
   justify-content: center;
-  flex-wra: wrap;
+  flex-wrap: wrap;
 }
 
 /* footer */
@@ -372,7 +362,7 @@ img {
     display: none;
   }
 
-  .mennu-toggle {
+  .menu-toggle {
     display: block;
   }
 
