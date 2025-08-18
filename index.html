@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,178 +19,190 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yH6R8Y2wYQ2ZkzvQd0g0gZyC5nC1n3oZQ1lV8V2T9b2b8QwW9o4M7t7F8D9m2k2P+TqXxS4+u7wzvQqz1s1XQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    
-    <!-- swiper css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- page css -->
     <link rel="stylesheet" href="index.style.css"/>
   </head>
   
   <body>
-    <a class="skip-link" href="#main"> Skip to content </a>
     
-    <header class="navbar" role="banner">
-      <div class="nav-inner">
-        <a class="logo" href="index.html" aria-label="JB Fireside Home"> JB <span> Fireside </span> </a>
-        <nav class="nav-links" aria-label="Primary">
-          <a href="index.html" class="active"> Home </a>
-          <a href="menu.html"> JB's Menu </a>
-          <a href="about.html"> About JB </a>
-          <a href="contact.html"> Contact JB </a>
-          <a href="location.html"> Where to Find JB </a>
-        </nav>
-        
-        <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open menu">
-          <i class="fa-solid fa-bars"> </i>
-        </button>
+    <!-- navbars -->
+    <header class="navbar-wrap">
+      
+      <!-- top bar: logo -->
+      <div class="navbar" role="banner">
+        <div class="nav-inner logo-bar">
+          <a class="logo" href="index.html" aria-label="JB Fireside Home"> JB <span> Fireside </span> </a>
+        </div>
       </div>
-
-      <nav id="mobile-drawer" class="mobile-drawer" aria-label="Mobile" hidden>
-        <button class="drawer-close" aria-label="Close menu">
-          <i class="fa-solid fa-xmark"> </i>
-        </button>
-
-        <a href="index.html"> Home </a>
-        <a href="menu.html"> JB's Menu </a>
-        <a href="about.html"> About JB </a>
-        <a href="contact.html"> Contact JB </a>
-        <a href="location.html"> Where to Find JB </a>
-      </nav>
+      
+      <!-- bottom bar: links + socials -->
+      <div class="navbar navbar-links">
+        <div class="nav-inner link-bar">
+          <nav class="nav-links" aria-label="Primary">
+            <a href="index.html" class="active"> <i class="fa-solid fa-house"> </i> Home </a>
+            <a href="menu.html"> <i class="fa-solid fa-utensils"> </i> JB's Menu </a>
+            <a href="about.html"> <i class="fa-solid fa-info-circle"> </i> About JB </a>
+            <a href="contact.html"> <i class="fa-solid fa-envelope"> </i> Contact JB </a>
+            <a href="location.html"> <i class="fa-solid fa-map-marker-alt"> </i> Where to Find JB </a>
+          </nav>
+          
+          <div class="social-nav">
+            <a href="https://www.instagram.com/jbfireside/" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"> </i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61551356499522" aria-label="Facebook">
+              <i class="fa-brands fa-facebook"> </i>
+            </a>
+            <a href="https://www.tiktok.com/@jbfiresiderestaur">
+              <i class="fa-brands fa-tiktok"> </i>
+            </a>
+          </div>
+          
+          <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open menu">
+            <i class="fa-solid fa-bars"> </i>
+          </button>
+        </div>
+      </div>
     </header>
-
-    <main id="main" tabindex="-1">
+    
+    <!-- mobile drawer -->
+    <div id="mobile-drawer" class="mobile-drawer" hidden>
+      <button class="drawer-close" aria-label="Close menu">
+        <i class="fa-solid fa-xmark"> </i> 
+      </button>
+      
+      <a href="index.html"> Home </a>
+      <a href="menu.html"> JB's Menu </a>
+      <a href="about.html"> About JB </a>
+      <a href="contact.html"> Contact JB </a>
+      <a href="location.html"> Where to Find JB </a>
+      
+      <div class="socials">
+        <a href="https://www.instagram.com/jbfireside/"> <i class="fa-brands fa-instagram"> </i> </a>
+        <a href="https://www.facebook.com/profile.php?id=61551356499522"> <i class="fa-brands fa-facebook"> </i> </a>
+        <a href="https://www.tiktok.com/@jbfiresiderestaur"> <i class="fa-brands fa-tiktok"> </i> </a>
+      </div>
+    </div>
+    
+    <main>
       <!-- hero -->
       <section class="hero">
         <div class="hero-inner reveal">
-          <h1> Bold Caribbean. <span class="accent"> Fresh & Fiery. </span> </h1>
-          <p> From Jerk CHicken to Curry Goat - comfort food that warms the soul. </p>
+          <h1> Bold Caribbean <span class="accent"> Flavors </span> On Wheels </h1>
+          <p> Serving authentic Jerk Chicken, Oxtails, and Fried Ripe Plantains across Killeen. </p>
           
           <div class="hero-ctas">
-            <a class="btn primary" href="menu.html"> Order Now </a>
-            <a class="btn ghost" href="location.html"> Find JB </a>
+            <a href="menu.html" class="btn primary"> View Menu </a>
+            <a href="contact.html" class="btn ghost"> Order Now! </a>
           </div>
         </div>
       </section>
-
-      <!-- featured items -->
+      
+      <!-- featured dishes -->
       <section class="featured" aria-labelledby="featured-title">
         <div class="section-head">
-          <h2 id="featured-title"> Top Rated Dishes </h2>
-          <p class="muted"> Fan Favorites you can't miss </p>
+          <div class="section-title">
+            <h2 id="featured-title"> Top Picks </h2>
+            <p class="muted"> Customer favorites you can't miss </p>
+          </div>
         </div>
-
+        
         <div class="card-grid">
-          <article class="card-reveal">
-            <img loading="lazy" src="https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=800&q=60" alt="Jerk Chicken with Rice and Beans"/>
+          <article class="card reveal">
+            <img src="https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=800&q=60" alt="Jerk Chicken Plate"/>
             <div class="card-body">
-              <h3> Jerk Chicken <span class="spicy" aria-label="Spicy" title="Spicy"> 🌶️ </span> </h3>
-              <p> Smoky-savory heat, served with rice & beans. </p>
+              <h3> Jerk Chicken 🌶️ </h3>
+              <p> Smoky-sweet heat, served with rice and peas. </p>
+              <span class="price"> $16.00 </span>
             </div>
           </article>
-
-          <article class="card-reveal">
-            <img loading="lazy" src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=60" alt="Curry Goat with Steamed Veg"/>
+          
+          <article class="card reveal">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=60" alt="Curry Goat Plate"/>
             <div class="card-body">
               <h3> Curry Goat </h3>
               <p> Tender and aromatic, simmered to perfection. </p>
+              <span class="price"> $16.00 </span>
             </div>
           </article>
-
-          <article class="card-reveal">
-            <img loading="lazy" src="https://images.unsplash.com/photo-1506368083636-6defb67639d8?auto=format&fit=crop&w=800&q=60" alt="Fried Ripe Plantains"/>
+          
+          <article class="card reveal">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=60" alt="Fried Ripe Plantains"/>
             <div class="card-body">
               <h3> Fried Ripe Plantains </h3>
-              <p> Golden edges, soft centers - just right. </p>
+              <p> Golden edges, soft center - just right. </p>
+              <span class="price"> $6.50 </span>
             </div>
           </article>
         </div>
       </section>
-
-      <!-- reviews (swiper) -->
-      <section class="reviews" aria-labelledby="reviews-title">
-        <div class="section-head">
-          <h2 id="reviews-title"> What People Are Saying </h2>
-          <p class="muted"> Real love from our community </p>
-        </div>
-
-        <div class="swiper review-swiper">
-          <div class="swiper-wrapper">
-            
-            <div class="swiper-slide">
-              <div class="review-card">
-                <div class="stars" aria-label="5 out of 5 stars" title="5 out of 5">
-                  <i class="fa-solid fa-star"> </i> <i class="fa-solid fa-star"> </i> <i class="fa-solid fa-star"> </i> <i class="fa-solid fa-star"> </i> <i class="fa-solid fa-star"> </i>
-                </div>
-                <p> "Best Jerk Chicken I've ever had. Perfect smoke and spice." </p>
-                <div class="reviewer"> - Alex R. </div> 
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="review-card">
-                <div class="stars" aria-label="5 out of 5 stars" title="5 out of 5">
-                  <i class="fa-solid fa-star"> </i> <i class="fa-solid fa-star"> </i> <i class="fa-solid fa-star"> </i> <i class="fa-solid fa-star"> </i> <i class="fa-solid fa-star"> </i>
-                </div>
-                <p> "Oxtail was fall-off-the-bone tender. I'm addicted." </p>
-                <div class="reviewer"> - Jamie L. </div>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="review-card">
-                <div class="stars" aria-label="5 out of 5 stars" title="5 out of 5">
-                  <i class="fa-solid fa-star"> </i> <i class="fa-solid fa-star"> </i> <i class="fa-solid fa-star"> </i> <i class="fa-solid fa-star"> </i> <i class="fa-solid fa-star"> </i>
-                </div>
-                <p> "Plaintains were sweet and ripe. Portions are generous!" </p>
-                <div class="reviewer"> - Morgan K. </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"> </div>
-        </div>
+      
+      <!-- reviews (grid) -->
+      <section class="reviews reveal">
+        <article class="review-card">
+          <div class="stars"> ★★★★★ </div>
+          <p> Best Jerk Chicken I've ever had. Perfect smoke and spice. </p>
+          <span class="reviewer"> - Alex R. </span>
+        </article>
+        
+        <article class="review-card">
+          <div class="stars"> ★★★★★ </div>
+          <p> Oxtail was fall-off-the-bone tender. I'm addicted. </p>
+          <span class="reviewer"> - Jamie L. </span>
+        </article>
+        
+        <article class="review-card">
+          <div class="stars"> ★★★★★ </div>
+          <p> Plantains caramelized just right. Portions are generous! </p>
+          <span class="reviewer"> - Morgan K. </span>
+        </article>
+        
+        <article class="review-card">
+          <div class="stars"> ★★★★★ </div>
+          <p> Fast service and amazing food. Will definitely come back. </p>
+        </article>
       </section>
-
+      
       <!-- cta strip -->
-      <section class="cta-strip reveal" aria-label="Call to action">
-        <h3> Ready for a flavor trip? </h3>
+      <section class="cta-strip reveal">
+        <h3> Ready to Taste the Fire? </h3>
         <div class="cta-actions">
-          <a class="btn primary" href="menu.html"> Browse Menu </a>
-          <a class="btn ghost" href="location.html"> See Hours & Map </a>
+          <a href="menu.html" class="btn primary"> Explore Menu </a>
+          <a href="contact.html" class="btn ghost"> Contact Us </a>
         </div>
       </section>
     </main>
-
+    
+    <!-- footer -->
     <footer class="footer" role="contentinfo">
       <div class="footer-inner">
-        <p> &copyright; <span id="year"> </span> JB Fireside • All rights reserved. </p>
-        <div class="social">
-          <a href="https://www.instagram.com/jbfireside/" aria-label="Instagram">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=61551356499522" aria-label="Facebook">
-            <i class="fa-brands fa-facebook"></i>
-          </a>
-          <a href="https://www.tiktok.com/@jbfiresiderestaur" aria-label="Tiktok">
-            <i class="fa-brands fa-tiktok"></i>
-          </a>
+        <div class="footer-col bio">
+          <h4> JB Fireside </h4>
+          <p> Bringing bold Caribbean flavors to Killeen streets, one plate at a time. </p>
+        </div>
+        
+        <div class="footer-col links">
+          <h4> Pages </h4>
+          <a href="index.html"> <i class="fa-solid fa-house"> </i> Home </a>
+          <a href="menu.html"> <i class="fa-solid fa-utensils"> </i> JB's Menu </a>
+          <a href="about.html"> <i class="fa-solid fa-info-circle"> </i> About JB </a>
+          <a href="contact.html"> <i class="fa-solid fa-envelope"> </i> Contact JB </a>
+          <a href="location.html"> <i class="fa-solid fa-map-marker-alt"> </i> Where to Find JB </a>
+        </div>
+        
+        <div class="footer-col socials">
+          <h4> Follow Us </h4>
+          <a href="https://www.instagram.com/jbfireside/"> <i class="fa-brands fa-instagram"> </i> Instagram </a>
+          <a href="https://www.facebook.com/profile.php?id=61551356499522"> <i class="fa-brands fa-facebook"> </i> Facebook </a>
+          <a href="https://www.tiktok.com/@jbfiresiderestaur"> <i class="fa-brands fa-tiktok"> </i> Tiktok </a>
         </div>
       </div>
+      
+      <p class="footer-copy" style="text-align: center; font-size: .8rem; color: var(--muted); padding: 1rem;"> &copy; <span id="year"> </span> JB Fireside • All rights reserved. </p>
     </footer>
-
-    <!-- structured data -->
-    <script type="application/ld+json">
-      {
-      "@context": "https://schema.org",
-      "@type": "Restaurant",
-      "name": "JB Fireside",
-      "servesCuisine": "Caribbean",
-      "address": {"@type":"PostalAddress","addressLocality":"Killeen","addressRegion":"TX","addressCountry":"US"},
-      "url": "https://pfpl19.github.io/jb2/",
-      "priceRange": "$$",
-      "openingHours": ["Mo-Sa 11:00-20:00"]
-      }
-    </script>
     
+    <script src="index.script.js" defer> </script>
   </body>
 </html>
