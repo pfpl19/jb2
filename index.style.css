@@ -409,6 +409,13 @@ img {
 
 .footer .socials {
   gap: .5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-col.socials a {
+  display: block;
+  margin: .25rem 0;
 }
 
 /* ====== responsive ====== */
