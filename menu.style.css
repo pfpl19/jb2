@@ -3,8 +3,8 @@
   --panel: #101010;
   --muted: #b8b8b8;
   --text: #f3f3f3;
-  --accent: #ff8c00;
-  --accent-2: #41c95b;
+  --accent: #ff8c00;   /* main orange */
+  --accent-2: #ff8c00; /* prices now match theme */
   --accent-3: #ffd27f;
   --border: rgba(255, 255, 255, 0.08);
 }
@@ -55,6 +55,12 @@ img {
 }
 
 .nav-links a:hover {
+  color: var(--accent);
+  text-shadow: 0 0 8px var(--accent);
+}
+
+/* active link */
+.nav-links a.active {
   color: var(--accent);
   text-shadow: 0 0 8px var(--accent);
 }
@@ -223,11 +229,17 @@ img {
   color: var(--muted);
 }
 
+/* prices */
 .price {
   display: block;
   margin-top: .5rem;
   font-weight: 600;
   color: var(--accent-2);
+  transition: color .2s ease, text-shadow .2s ease;
+}
+
+.price:hover {
+  text-shadow: 0 0 8px var(--accent-2);
 }
 
 /* ====== cta strip ====== */
