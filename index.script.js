@@ -1,44 +1,41 @@
-// Navbar shrink + background
-const nav = document.querySelector('.navbar');
+// Navbar shrink
+const navbars = document.querySelectorAll('.navbar');
 const onScroll = () => {
-  if (window.scrollY > 12) nav.classList.add('scrolled');
-  else nav.classList.remove('scrolled');
+  navbars.forEach(nav => {
+    if (window.scrollY > 12) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  });
 };
 window.addEventListener('scroll', onScroll);
 onScroll();
 
-// Mobile drawer toggle + basic focus trap
+// Mobile drawer
 const drawer = document.getElementById('mobile-drawer');
 const toggleBtn = document.querySelector('.menu-toggle');
 const closeBtn = document.querySelector('.drawer-close');
 let lastFocus = null;
 
-function openDrawer(){
+function openDrawer() {
   lastFocus = document.activeElement;
+  drawer.classList.add('open');
   drawer.hidden = false;
   toggleBtn.setAttribute('aria-expanded','true');
-  drawer.querySelector('a, button').focus();
+  drawer.querySelector('a').focus();
   document.body.style.overflow = 'hidden';
 }
-function closeDrawer(){
+function closeDrawer() {
+  drawer.classList.remove('open');
   drawer.hidden = true;
   toggleBtn.setAttribute('aria-expanded','false');
   document.body.style.overflow = '';
   if (lastFocus) lastFocus.focus();
 }
-if (toggleBtn) toggleBtn.addEventListener('click', openDrawer);
-if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+toggleBtn?.addEventListener('click', openDrawer);
+closeBtn?.addEventListener('click', closeDrawer);
+drawer?.addEventListener('click', e => { if(e.target.tagName==="A") closeDrawer(); });
+window.addEventListener('keydown', e => { if(e.key==="Escape" && drawer.classList.contains('open')) closeDrawer(); });
 
-drawer?.addEventListener('click', (e)=>{
-  if(e.target.tagName === 'A') closeDrawer();
-});
-
-// Escape key closes drawer
-window.addEventListener('keydown', (e)=>{
-  if(e.key === 'Escape' && !drawer.hidden) closeDrawer();
-});
-
-// Reveal-on-scroll
+// Reveal on scroll
 const io = new IntersectionObserver((entries)=>{
   entries.forEach(entry=>{
     if(entry.isIntersecting){
@@ -46,22 +43,8 @@ const io = new IntersectionObserver((entries)=>{
       io.unobserve(entry.target);
     }
   });
-},{threshold: 0.12});
-
+},{threshold:0.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-
-// Swiper for reviews
-const reviewSwiper = new Swiper('.review-swiper', {
-  loop: true,
-  autoplay: { delay: 3200, disableOnInteraction: false },
-  pagination: { el: '.swiper-pagination', clickable: true },
-  slidesPerView: 1,
-  spaceBetween: 16,
-  keyboard: { enabled: true },
-  breakpoints: {
-    700: { slidesPerView: 2, spaceBetween: 18 }
-  }
-});
 
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
