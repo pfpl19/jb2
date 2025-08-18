@@ -15,25 +15,54 @@ const toggleBtn = document.querySelector('.menu-toggle');
 const closeBtn = document.querySelector('.drawer-close');
 let lastFocus = null;
 
+function trapFocus(e) {
+  const focusable = drawer.querySelectorAll('a, button, input, select, textarea, [tabindex]:not([tabindex="-1"])');
+  if (!focusable.length) return;
+  const first = focusable[0];
+  const last = focusable[focusable.length - 1];
+
+  if (e.key === "Tab") {
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  }
+}
+
 function openDrawer() {
   lastFocus = document.activeElement;
   drawer.classList.add('open');
   drawer.hidden = false;
   toggleBtn.setAttribute('aria-expanded','true');
-  drawer.querySelector('a').focus();
-  document.body.style.overflow = 'hidden';
+  document.body.classList.add('no-scroll');
+  drawer.querySelector('a, button').focus();
+  drawer.addEventListener('keydown', trapFocus);
 }
+
 function closeDrawer() {
   drawer.classList.remove('open');
   drawer.hidden = true;
   toggleBtn.setAttribute('aria-expanded','false');
-  document.body.style.overflow = '';
+  document.body.classList.remove('no-scroll');
+  drawer.removeEventListener('keydown', trapFocus);
   if (lastFocus) lastFocus.focus();
 }
+
 toggleBtn?.addEventListener('click', openDrawer);
 closeBtn?.addEventListener('click', closeDrawer);
-drawer?.addEventListener('click', e => { if(e.target.tagName==="A") closeDrawer(); });
-window.addEventListener('keydown', e => { if(e.key==="Escape" && drawer.classList.contains('open')) closeDrawer(); });
+
+// Click outside drawer closes it
+drawer?.addEventListener('click', e => {
+  if (e.target === drawer || e.target.tagName === "A") closeDrawer();
+});
+
+// Escape key closes drawer
+window.addEventListener('keydown', e => {
+  if (e.key === "Escape" && drawer.classList.contains('open')) closeDrawer();
+});
 
 // Reveal on scroll
 const io = new IntersectionObserver((entries)=>{
