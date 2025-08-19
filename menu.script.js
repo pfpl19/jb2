@@ -1,15 +1,18 @@
-// Navbar shrink
+// ====== Navbar shrink ======
 const navbars = document.querySelectorAll('.navbar');
 const onScroll = () => {
   navbars.forEach(nav => {
-    if (window.scrollY > 12) nav.classList.add('scrolled');
-    else nav.classList.remove('scrolled');
+    if (window.scrollY > 12) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
   });
 };
 window.addEventListener('scroll', onScroll);
 onScroll();
 
-// Mobile drawer
+// ====== Mobile drawer ======
 const drawer = document.getElementById('mobile-drawer');
 const toggleBtn = document.querySelector('.menu-toggle');
 const closeBtn = document.querySelector('.drawer-close');
@@ -23,6 +26,7 @@ function openDrawer() {
   drawer.querySelector('a').focus();
   document.body.style.overflow = 'hidden';
 }
+
 function closeDrawer() {
   drawer.classList.remove('open');
   drawer.hidden = true;
@@ -30,10 +34,31 @@ function closeDrawer() {
   document.body.style.overflow = '';
   if (lastFocus) lastFocus.focus();
 }
+
 toggleBtn?.addEventListener('click', openDrawer);
 closeBtn?.addEventListener('click', closeDrawer);
-drawer?.addEventListener('click', e => { if (e.target.tagName === "A") closeDrawer(); });
-window.addEventListener('keydown', e => { if (e.key === "Escape" && drawer.classList.contains('open')) closeDrawer(); });
 
-// Footer year
+drawer?.addEventListener('click', e => {
+  if (e.target.tagName === "A") closeDrawer();
+});
+
+window.addEventListener('keydown', e => {
+  if (e.key === "Escape" && drawer.classList.contains('open')) {
+    closeDrawer();
+  }
+});
+
+// ====== Reveal on scroll ======
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('reveal-visible');
+      io.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// ====== Footer year ======
 document.getElementById('year').textContent = new Date().getFullYear();
