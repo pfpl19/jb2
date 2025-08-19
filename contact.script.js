@@ -1,18 +1,22 @@
-document.addEventListener("scroll", () => {
-  const nav = document.querySelector(".navbar");
-  if(nav) nav.classList.toggle("shrink", window.scrollY > 50);
-});
+// Initialize EmailJS
+(function() {
+  emailjs.init("YOUR_PUBLIC_KEY"); // 🔑 replace with your EmailJS Public Key
+})();
 
-const menuIconContact = document.querySelector(".menu-icon");
+const form = document.getElementById("contact-form");
+const statusMsg = document.getElementById("form-status");
 
-if(menuIconContact) menuIconContact.addEventListener("click", () => {
-  const overlay = document.querySelector(".mobile-overlay");
-  if(overlay) overlay.style.display = "flex";
-});
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
 
-const closeContactBtn = document.querySelector(".close-btn");
-
-if(closeContactBtn) closeContactBtn.addEventListener("click", () => {
-  const overlay = document.querySelector(".mobile-overlay");
-  if(overlay) overlay.style.display = "none";
+  emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+    .then(() => {
+      statusMsg.textContent = "✅ Message sent successfully!";
+      statusMsg.className = "status success";
+      form.reset();
+    }, (err) => {
+      statusMsg.textContent = "❌ Failed to send message. Please try again.";
+      statusMsg.className = "status error";
+      console.error("EmailJS Error:", err);
+    });
 });
