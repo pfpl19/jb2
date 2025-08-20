@@ -5,30 +5,18 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title> JB Fireside - Caribbean Food Truck </title>
-    <meta name="description" content="JB Fireside brings bold Caribbean flavors - Jerk Chicken, Curry Goat, Plantains - to Killeen. Find us, check the menu, and read reviews."/>
-    <meta name="theme-color" content="#0b0b0b"/>
-    <meta property="og:title" content="JB Fireside - Caribbean Food Truck"/>
-    <meta property="og:description" content="Authentic Caribbean comfort food with a fiery twist. See our top dishes and reviews."/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://pfpl19.github.io/jb2/"/>
-    <meta property="og:image" content="https://images.unsplash.com/photo-1526312426976-593c2d0b-ccc4?auto=format&fit=crop&w=1200&q=60"/>
-
+    
     <!-- fonts and icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yH6R8Y2wYQ2ZkzvQd0g0gZyC5nC1n3oZQ1lV8V2T9b2b8QwW9o4M7t7F8D9m2k2P+TqXxS4+u7wzvQqz1s1XQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!-- page css -->
-    <link rel="stylesheet" href="index.style.css">
   </head>
   
   <body>
-
-    <!-- navbars -->
-    <header class="navbar-wrap">
-    
+  <!-- navbars -->
+  <header class="navbar-wrap">
     <!-- top navbar: logo -->
     <div class="navbar logo-bar">
       <div class="nav-inner">
@@ -38,10 +26,10 @@
         </a>
       </div>
     </div>
-      
-      <!-- bottom bar: nav links + socials -->
-      <div class="navbar navbar-links">
-        <div class="nav-inner">
+  
+    <!-- bottom bar: nav links + socials -->
+    <div class="navbar navbar-links">
+      <div class="nav-inner">
       
         <nav class="nav-links" aria-label="Primary">
           <a href="index.html" class="active">
@@ -93,135 +81,163 @@
 
   <!-- mobile drawer -->
   <div id="mobile-drawer" class="mobile-drawer" hidden>
-      <button class="drawer-close" aria-label="Close menu">
-        <i class="fa-solid fa-xmark"> </i>
-      </button>
+    <button class="drawer-close" aria-label="Close menu">
+      <i class="fa-solid fa-xmark"> </i>
+    </button>
   
-      <a href="index.html">
-        <i class="fa-solid fa-house"> </i>
-        Home
+    <a href="index.html">
+      <i class="fa-solid fa-house"> </i>
+      Home
+    </a>
+  
+    <a href="about.html">
+      <i class="fa-solid fa-info-circle"> </i>
+      About JB
+    </a>
+  
+    <a href="menu.html">
+      <i class="fa-solid fa-utensils"> </i>
+      JB's Menu
+    </a>
+  
+    <a href="contact.html">
+      <i class="fa-solid fa-envelope"> </i>
+      Contact JB
+    </a>
+  
+    <a href="location.html">
+      <i class="fa-solid fa-map-marker-alt"> </i>
+      Where to Find JB
+    </a>
+  
+    <div class="socials">
+      <a href="https://www.instagram.com/jbfireside/">
+        <i class="fa-brands fa-instagram"> </i>
       </a>
-  
-      <a href="about.html">
-        <i class="fa-solid fa-info-circle"> </i>
-        About JB
-      </a>
-  
-      <a href="menu.html">
-        <i class="fa-solid fa-utensils"> </i>
-        JB's Menu
-      </a>
-  
-      <a href="contact.html">
-        <i class="fa-solid fa-envelope"> </i>
-        Contact JB
-      </a>
-  
-      <a href="location.html">
-        <i class="fa-solid fa-map-marker-alt"> </i>
-        Where to Find JB
-      </a>
-  
-      <div class="socials">
-        <a href="https://www.instagram.com/jbfireside/">
-          <i class="fa-brands fa-instagram"> </i>
-        </a>
     
-        <a href="https://www.facebook.com/profile.php?id=61551356499522">
-          <i class="fa-brands fa-facebook"> </i>
-        </a>
+      <a href="https://www.facebook.com/profile.php?id=61551356499522">
+        <i class="fa-brands fa-facebook"> </i>
+      </a>
     
-        <a href="https://www.tiktok.com/@jbfiresiderestaur">
-          <i class="fa-brands fa-tiktok"> </i>
-        </a>
-      </div>
+      <a href="https://www.tiktok.com/@jbfiresiderestaur">
+        <i class="fa-brands fa-tiktok"> </i>
+      </a>
     </div>
+  </div>
     
+  <body>
     <main>
       <!-- hero -->
       <section class="hero">
         <div class="hero-inner reveal">
-          <h1> Bold Caribbean <span class="accent"> Flavors </span> On Wheels </h1>
-          <p> Serving authentic Jerk Chicken, Oxtails, and Fried Ripe Plantains across Killeen. </p>
+          <h1 class="hero-title"> The Real Treasure of the Caribbean </h1>
+          <p class="hero-tagline"> Bold Caribbean flavors, served hot from the streets of Killeen. </p>
           
           <div class="hero-ctas">
-            <a href="menu.html" class="btn primary"> View Menu </a>
-            <a href="contact.html" class="btn ghost"> Order Now! </a>
+            <a href="menu.html" class="btn primary"> Explore Menu </a>
+            <a href="contact.html" class="btn ghost"> Order Now </a>
           </div>
         </div>
       </section>
       
-      <!-- featured dishes -->
+      <!-- featured -->
       <section class="featured" aria-labelledby="featured-title">
         <div class="section-head">
           <div class="section-title">
-            <h2 id="featured-title"> Top Picks </h2>
-            <p class="muted"> Customer favorites you can't miss </p>
+            <h2 id="featured-title"> The Island's Best </h2>
+            <p class="muted"> Customer Favorites You Can't Miss </p>
           </div>
         </div>
         
         <div class="card-grid">
           <article class="card reveal">
-            <img src="https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=800&q=60" alt="Jerk Chicken Plate"/>
+            <img src="assets/" alt="Jerk Chicken Plate"/>
             <div class="card-body">
-              <h3> Jerk Chicken 🌶️ </h3>
-              <p> Smoky-sweet heat, served with rice and peas. </p>
+              <h3> Jerk Chicken Plate </h3>
+              <p> Smoky, charred, and kissed with island spices - this classic delivers bold heat balanced with just the right touch of savory. Paired beautifully with Rice & Beans or Plain White Rice and Steamed Cabbage. </p>
               <span class="price"> $16.00 </span>
             </div>
           </article>
           
           <article class="card reveal">
-            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=60" alt="Curry Goat Plate"/>
+            <img src="assets/" alt="Oxtail & Beans Plate"/>
             <div class="card-body">
-              <h3> Curry Goat </h3>
-              <p> Tender and aromatic, simmered to perfection. </p>
-              <span class="price"> $16.00 </span>
+              <h3> Oxtail & Beans Plate </h3>
+              <p> Slow-braised until tender, our oxtail melts off the bone in a rich, savory gravy, paired with hearty beans for true Caribbean comfort. Paired nicely with Rice & Beans or Plain White Rice and Steamed Cabbage. </p>
+              <span class="price"> $24.00 </span>
             </div>
           </article>
           
           <article class="card reveal">
-            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=60" alt="Fried Ripe Plantains"/>
+            <img src="assets/" alt="Curry Chicken Plate"/>
             <div class="card-body">
-              <h3> Fried Ripe Plantains </h3>
-              <p> Golden edges, soft center - just right. </p>
-              <span class="price"> $6.50 </span>
+              <h3> Curry Chicken Plate </h3>
+              <p> Golden curry simmered to perfection - tender chicken infused with herbs and spices that warm you from the inside out. Paired splendidly with Rice & Beans or Plain White Rice and Steamed Cabbage. </p>
+              <span class="price"> $16.00 </span>
             </div>
           </article>
         </div>
       </section>
       
-      <!-- reviews (grid) -->
-      <section class="reviews reveal">
-        <article class="review-card">
-          <div class="stars"> ★★★★★ </div>
-          <p> Best Jerk Chicken I've ever had. Perfect smoke and spice. </p>
-          <span class="reviewer"> - Alex R. </span>
-        </article>
+      <!-- reviews -->
+      <section class="reviews reveal" aria-labelledby="reviews-title">
+        <div class="section-head">
+          <div class="section-title">
+            <h2 id="reviews-title"> What Our Customers Say </h2>
+            <p class="muted"> Real voices from the Fireside community </p>
+          </div>
+        </div>
         
-        <article class="review-card">
-          <div class="stars"> ★★★★★ </div>
-          <p> Oxtail was fall-off-the-bone tender. I'm addicted. </p>
-          <span class="reviewer"> - Jamie L. </span>
-        </article>
-        
-        <article class="review-card">
-          <div class="stars"> ★★★★★ </div>
-          <p> Plantains caramelized just right. Portions are generous! </p>
-          <span class="reviewer"> - Morgan K. </span>
-        </article>
-        
-        <article class="review-card">
-          <div class="stars"> ★★★★★ </div>
-          <p> Fast service and amazing food. Will definitely come back. </p>
-        </article>
+        <div class="review-grid">
+          <article class="review-card">
+            <div class="stars"> ★★★★★ </div>
+            <p> "Today I got the Jerked Chicken. I have to tell you how good this was. The chicken was moist, tender and smokey. The rice was awesomely seasoned and contained even awesome beans. The cabbage, my favorite, so moist, nicely spicy and plenty of flavor. Thanks JB and company." </p>
+            <span class="reviewer"> - Thai L. </span>  
+          </article>
+          
+          <article class="review-card">
+            <div class="stars"> ★★★★★ </div>
+              <p> "Everything was very delicious and hot. Very friendly atmosphere ❤️ Will definitely be back." </p>
+            <span class="reviewer"> - Angela W. </span>
+          </article>
+          
+          <article class="review-card">
+            <div class="stars"> ★★★★★ </div>
+            <p> "OMG the curry goat is off the chain. I'm HOOKED. The seasoning is on point. I absolutely LOVED the flavor." </p>
+            <span class="reviewer"> - Marsha M. </span>
+          </article>
+          
+          <article class="review-card">
+            <div class="stars"> ★★★★★ </div>
+            <p> "First Time & Fully Satisfied! </p>
+            <p> After church I stopped by JB Fireside for the first time, and let me tell you. I ate and drank GOOD! 🙌🏽🔥 The jerk chicken was flavorful and tender, the cabbage was cooked just right, and those plantains were so good. The house drink was refreshing and hit the spot. </p>
+            <p> What really stood out was the hospitality. They were kind enough to let me try two different sauces since it was my first time. That's love and good service 💛 I'll definitely be back! </p>
+            <p> #SundayBlessings #JB Fireside #KilleenEats #FirstTimeFire </p>
+            <p> #JamaicanFoodDoneRight </p>
+            <span class="reviewer"> - Christy W. </p>
+          </article>
+          
+          <article class="review-card">
+            <div class="stars"> ★★★★★ </div>
+            <p> "Jb fireside amazing food better people couldn't ask for a more authentic Jamaican food truck reminds of being back home in the islands.. everything is amazing curry goat is next level" </p>
+            <span class="reviewer"> - Rajiv R. </p>
+          </article>
+          
+          <article class="review-card">
+            <div class="stars"> ★★★★★ </div>
+            <p> "The service was A1. Very friendly. The food was absolutely AMAZING! Large portions and everything was FRESH! Today was my first time trying and I will definitely be back. The seating area is well shaded and festive. Priced very well for the amount of food and it was so delicious." </p>
+            <span class="reviewer"> - Shakira B. </p>
+          </article>
+        </div>
       </section>
       
-      <!-- cta strip -->
       <section class="cta-strip reveal">
-        <h3> Ready to Taste the Fire? </h3>
+        <h3> 🔥 Taste the Fire. Love the Flavor 🔥 </h3>
+        <p> Serving Killeen with bold Caribbean comfort food - order today or come find us! </p>
         <div class="cta-actions">
-          <a href="menu.html" class="btn primary"> Explore Menu </a>
-          <a href="contact.html" class="btn ghost"> Contact Us </a>
+          <a href="menu.html" class="btn primary"> View Menu </a>
+          <a href="contact.html" class="btn ghost"> Order Now </a>
+          <a href="location.html" class="btn accent"> Find JB </a>
         </div>
       </section>
     </main>
@@ -229,29 +245,57 @@
     <!-- footer -->
     <footer class="footer" role="contentinfo">
       <div class="footer-inner">
-        <div class="footer-col bio">
+        <div class="footer-col">
           <h4> JB Fireside </h4>
           <p> Bringing bold Caribbean flavors to Killeen streets, one plate at a time. </p>
         </div>
         
         <div class="footer-col links">
           <h4> Pages </h4>
-          <a href="index.html"> <i class="fa-solid fa-house"> </i> Home </a>
-          <a href="menu.html"> <i class="fa-solid fa-utensils"> </i> JB's Menu </a>
-          <a href="about.html"> <i class="fa-solid fa-info-circle"> </i> About JB </a>
-          <a href="contact.html"> <i class="fa-solid fa-envelope"> </i> Contact JB </a>
-          <a href="location.html"> <i class="fa-solid fa-map-marker-alt"> </i> Where to Find JB </a>
+            <a href="index.html" class="active">
+              <i class="fa-solid fa-house"> </i>
+              Home
+            </a>
+        
+            <a href="about.html">
+              <i class="fa-solid fa-info-circle"> </i>
+              About JB
+            </a>
+        
+            <a href="menu.html">
+              <i class="fa-solid fa-utensils"> </i>
+              JB's Menu
+            </a>
+        
+            <a href="contact.html">
+              <i class="fa-solid fa-envelope"> </i>
+              Contact JB
+            </a>
+        
+            <a href="location.html">
+              <i class="fa-solid fa-map-marker-alt"> </i>
+              Where to Find JB
+            </a>
         </div>
         
         <div class="footer-col socials">
-          <h4> Follow Us </h4>
-          <a href="https://www.instagram.com/jbfireside/"> <i class="fa-brands fa-instagram"> </i> Instagram </a>
-          <a href="https://www.facebook.com/profile.php?id=61551356499522"> <i class="fa-brands fa-facebook"> </i> Facebook </a>
-          <a href="https://www.tiktok.com/@jbfiresiderestaur"> <i class="fa-brands fa-tiktok"> </i> Tiktok </a>
+          <h4> Follow JB </h4>
+          <a href="https://www.instagram.com/jbfireside/">
+            <i class="fa-brands fa-instagram"> </i>
+            Instagram
+          </a>
+    
+          <a href="https://www.facebook.com/profile.php?id=61551356499522">
+            <i class="fa-brands fa-facebook"> </i>
+            Facebook
+          </a>
+    
+          <a href="https://www.tiktok.com/@jbfiresiderestaur">
+            <i class="fa-brands fa-tiktok"> </i>
+            Tiktok
+          </a>
         </div>
       </div>
-      
-      <p class="footer-copy" style="text-align: center; font-size: .8rem; color: var(--muted); padding: 1rem;"> &copy; <span id="year"> </span> JB Fireside • All rights reserved. </p>
     </footer>
     
     <script src="index.script.js" defer> </script>
