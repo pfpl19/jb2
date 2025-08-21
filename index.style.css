@@ -262,22 +262,37 @@ a {
 /* mobile adjustments */
 @media (max-width: 640px) {
   .hero {
-    padding: 5rem 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    min-height: 65vh;
   }
-  
-  .hero-title {
-    font-size: 2rem;
-    line-height: 1.2;
+
+  .hero-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+    width: 100%;
+    max-width: 90%;
   }
-  
+
   .hero-ctas {
+    display: flex;
     flex-direction: column;
     gap: .75rem;
-  }
-  
-  .btn {
     width: 100%;
-    justify-content: center;
+    align-items: center;
+  }
+
+  .btn {
+    width: 80%;
+    font-size: 0.9rem;
+    padding: 0.6rem 0.9rem;
   }
 }
 
