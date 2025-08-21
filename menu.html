@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title> About JB Fireside </title>
+    
+    <!-- fonts and icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yH6R8Y2wYQ2ZkzvQd0g0gZyC5nC1n3oZQ1lV8V2T9b2b8QwW9o4M7t7F8D9m2k2P+TqXxS4+u7wzvQqz1s1XQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- page css -->
+    <link rel="stylesheet" href="menu.style.css">
+  </head>
+  
+  <body>
+    <!-- navbars -->
+    <header class="navbar-wrap">
+      <!-- top navbar: logo -->
+      <div class="navbar logo-bar">
+        <div class="nav-inner">
+          <a class="logo" href="index.html" aria-label="JB Fireside Home">
+            JB <span> Fireside </span>
+          </a>
+        </div>
+      </div>
+  
+      <!-- bottom bar: nav links + socials -->
+      <div class="navbar navbar-links">
+        <div class="nav-inner">
+      
+          <nav class="nav-links" aria-label="Primary">
+            <a href="index.html">
+              <i class="fa-solid fa-house"> </i>
+              Home
+            </a>
+        
+            <a href="about.html">
+              <i class="fa-solid fa-info-circle"> </i>
+              About JB
+            </a>
+        
+            <a href="menu.html" class="active">
+              <i class="fa-solid fa-utensils"> </i>
+              JB's Menu
+            </a>
+        
+            <a href="contact.html">
+              <i class="fa-solid fa-envelope"> </i>
+              Contact JB
+            </a>
+        
+            <a href="location.html">
+              <i class="fa-solid fa-map-marker-alt"> </i>
+              Where to Find JB
+            </a>
+          </nav>
+      
+          <div class="social-nav">
+            <a href="https://www.instagram.com/jbfireside/" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"> </i>
+            </a>
+        
+            <a href="https://www.facebook.com/profile.php?id=61551356499522" aria-label="Facebook">
+              <i class="fa-brands fa-facebook"> </i>
+            </a>
+        
+            <a href="https://www.tiktok.com/@jbfiresiderestaur" aria-label="Tiktok">
+              <i class="fa-brands fa-tiktok"> </i>
+            </a>
+          </div>
+      
+          <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Open menu">
+            <i class="fa-solid fa-bars"> </i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- mobile drawer -->
+    <div id="mobile-drawer" class="mobile-drawer" hidden>
+      <button class="drawer-close" aria-label="Close menu">
+        <i class="fa-solid fa-xmark"> </i>
+      </button>
+  
+      <a href="index.html">
+        <i class="fa-solid fa-house"> </i>
+        Home
+      </a>
+  
+      <a href="about.html">
+        <i class="fa-solid fa-info-circle"> </i>
+        About JB
+      </a>
+  
+      <a href="menu.html">
+        <i class="fa-solid fa-utensils"> </i>
+        JB's Menu
+      </a>
+  
+      <a href="contact.html">
+        <i class="fa-solid fa-envelope"> </i>
+        Contact JB
+      </a>
+  
+      <a href="location.html">
+        <i class="fa-solid fa-map-marker-alt"> </i>
+        Where to Find JB
+      </a>
+  
+      <div class="socials">
+        <a href="https://www.instagram.com/jbfireside/">
+          <i class="fa-brands fa-instagram"> </i>
+        </a>
+    
+        <a href="https://www.facebook.com/profile.php?id=61551356499522">
+          <i class="fa-brands fa-facebook"> </i>
+        </a>
+    
+        <a href="https://www.tiktok.com/@jbfiresiderestaur">
+          <i class="fa-brands fa-tiktok"> </i>
+        </a>
+      </div>
+    </div>
+    
+    <body>
+      <!-- hero -->
+      <section class="menu-categories">
+        <button class="category-btn active" data-category="main-courses"> Main Courses </button>
+        <button class="category-btn" data-category="combos"> Combos </button>
+        <button class="category-btn" data-category="sides"> Sides </button>
+        <button class="category-btn" data-category="done-to-order"> Done to Order </button>
+        <button class="category-btn" data-category="natural-beverages"> Natural Beverages </button>
+        <button class="category-btn" data-category="drinks"> Drinks </button>
+        <button class="category-btn" data-category="on-the-side"> On the Side (No Rice) </button>
+      </section>
+      
+      <!-- menu grid -->
+      <section class="menu-grid">
+        
+        <!-- main courses -->
+        <div class="menu-card" data-category="main-courses">
+          <h3> Brown Stew Chicken </h3>
+          <p> Marinated chicken slow-cooked in tomato sauce, onions and scotch bonnet peppers. Served with either Rice & Beans or Plain White Rice, and a side of Steamed Cabbage. </p>
+          <span class="price"> $16.00 </span>
+        </div>
+        
+        <div class="menu-card" data-category="main-courses">
+          <h3> Curry Chicken </h3>
+          <p> Chicken in Jamaican curry sauce. Served with either Rice & Beans or Plain White Rice, and a side of Steamed Cabbage </p>
+          <span class="price"> $16.00 </span>
+        </div>
+        
+        <div class="menu-card" data-category="main-courses">
+          <h3> Curry Goat </h3>
+          <p> Goat meat stewed in hot Indian gravy - Jamaican style. Served with either Rice & Beans or Plain White Rice, and a side of Steamed Cabbage. </p>
+          <span class="price"> $16.00 </span>
+        </div>
+        
+        <div class="menu-card" data-category="main-courses">
+          <h3> General Tso's Chicken </h3>
+          <p> Chicken coated in a savory, tangy, sweet, spicy but absolutely yummy sauce. Served with either Rice & Beans or Plain White Rice, and a side of Steamed Cabbage. </p>
+          <span class="price"> $16.00 </span>
+        </div>
+        
+        <div class="menu-card" data-category="main-courses">
+          <h3> Jerk Chicken </h3>
+          <p> Chicken quarters soaked in Jamaican jerk seasoning and grilled to perfection. Served with either Rice & Beans or Plain White Rice, and a side of Steamed Cabbage. </p>
+          <span class="price"> $16.00 </span>
+        </div>
+        
+        <div class="menu-card" data-category="main-courses">
+          <h3> Jerk Pork </h3>
+          <p> Spicy grilled pork shoulder marinated in Jamaican jerk seasoning. Served with either Rice & Beans or Plain White Rice, and a side of Steamed Cabbage. </p>
+          <span class="price"> $17.00 </span>
+        </div>
+        
+        <div class="menu-card" data-category="main-courses">
+          <h3> Jerk Wings Dish (5pcs) </h3>
+          <p> Juicy jerk wings marinated in bold spices and grilled to perfection - smoky, spicy, and full of Island flavor. Served with either Rice & Beans or Plain White Rice, and a side of Steamed Cabbage. </p>
+          <span class="price"> $16.00 </span>
+        </div>
+        
+        <div class="menu-card" data-category="main-courses">
+          <h3> Orange Chicken </h3>
+          <p> Slow stewed chicken in a delicious orange sauce. Served with either Rice & Beans or Plain White Rice, and a side of Steamed Cabbage. </p>
+          <span class="price"> $16.00 </span>
+        </div>
+        
+        <div class="menu-card" data-category="main-courses">
+          <h3> Oxtail & Beans (Regular) </h3>
+          <p> Fall-off-the-bone oxtail stewed with broad beans. Served with either Rice & Beans or Plain White Rice, and a side of Steamed Cabbage. </p>
+          <span class="price"> $24.00 </span>
+        </div>
+        
+        <div class="menu-card" data-category="main-courses">
+          <h3> Oxtail & Beans (Large) </h3>
+          <p> Fall-off-the bone oxtail stewed with broad beans. Served with either Rice & Beans or Plain White Rice, and a side of Steamed Cabbage. </p>
+          <span class="price"> $35.00 </span>
+        </div>
+        
+        <div class="menu-card" data-category="main-courses">
+          <h3> Sweet & Sour Chicken </h3>
+          <p> A little sweetness and a little sourness - your favorite pineapple infused sauce. Served with either Rice & Beans or Plain White Rice, and a side of Steamed Cabbage. </h3>
+        </div>
+      
+        <!-- combos -->
+        <div class="menu-card" data-category="combos">
+          <h3> Chicken Nuggets (5pcs) </h3>
+          <p> 5 pieces of crispy Chicken Nuggets. Served with French Fries & 12oz. Drink. Your choice of Coca-Cola or Sprite. </p>
+          <span class="price"> $8.00 </span>
+        </div>
+          
+        <div class=" menu-card" data-category="combos">
+          <h3> Chicken Nuggets (10pcs) </h3>
+          <p> 10 pieces of crispy Chicken Nuggets. Served with French Fries & 12oz. Drink. Your choice of Coca-Cola or Sprite. </p>
+          <span class="price"> $12.00 </span>
+        </div>
+          
+        <div class="menu-card" data-category="combos">
+          <h3> Jerk Wings </h3>
+          <p> 5 pieces of wings soaked in Jamaican jerk seasoning grilled to perfection. Served with French Fries & 12oz. Drink. Your choice of Coca-Cola or Sprite. </p>
+          <span class="price"> $13.00 </span>
+        </div>
+          
+        <div class="menu-card" data-category="combos">
+          <h3> Fish Fillet </h3>
+          <p> Tender, golden-fried catfish fillet seasoned to perfection - crispy on the outside, flaky on the inside, and full of flavor. Served with French Fries & 12oz. Drink. Your choice of Coca-Cola or Sprite. </p>
+          <span class="price"> $16.00 </span>
+        </div>
+          
+        <!-- sides -->
+        <div class="menu-card" data-category="sides">
+          <h3> French Fries </h3>
+          <p> Crispy, golden French fries with a light seasoning - the perfect side to any meal. </p>
+          <span class="price"> $3.00 </span>
+        </div>
+          
+        <div class="menu-card" data-category="sides">
+          <h3> Fried Ripe Plantains </h3>
+          <p> 4 pieces of golden, sweet, and perfectly fried ripe plantains - soft on the inside with a lightly crisp edge. </p>
+          <span class="price"> $4.00 (when purchased only) </span>
+          <span class="price"> $2.00 (when purchased with Main Courses) </span>
+        </div>
+          
+        <div class="menu-card" data-category="sides">
+          <h3> Jamaican Patty </h3>
+          <p> Flaky, golden pastry filled with seasoned beef - a spicy and savory Jamaican classic. </p>
+          <span class="price"> $3.00 </span>
+        </div>
+        
+        <div class="menu-card" data-category="sides">
+          <h3> Jerk Sauce </h3>
+          <p> Your choice of Mild, Spicy, Ranch and Blue Cheese. </p>
+          <span class="price"> $1.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="sides">
+          <h3> Loaded Fries </h3>
+          <p> Crispy fries topped with melted cheese, and savory bacon - a bold, satisfying treat. </p>
+          <span class="price"> $7.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="sides">
+          <h3> Mac and Cheese </h3>
+          <p> Creamy, cheesy macaroni baked to perfection - rich, comforting, and full of flavor. </p>
+          <span class="price"> $6.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="sides">
+          <h3> Mashed Potatoes </h3>
+          <p> Creamy mashed potatoes, whipped smooth with butter and seasoning for a rich, comforting taste. </p>
+          <span class="price"> $4.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="sides">
+          <h3> Plain White Rice </h3>
+          <p> Fluffy, steamed white rice - a simple and perfect base for any meal. </p>
+          <span class="price"> $4.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="sides">
+          <h3> Potato Salad </h3>
+          <p> Creamy, flavorful potato salad made with tender potatoes, herbs, and a perfectly seasoned dressing - a classic, comforting side. </p>
+          <span class="price"> $4.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="sides">
+          <h3> Potato Wedges </h3>
+          <p> Thick-cut potato wedges, crispy on the outside and fluffy on the inside, lightly seasoned for bold flavor in every bite. </p>
+          <span class="price"> $3.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="sides">
+          <h3> Rice & Beans </h3>
+          <p> Savory rice & beans cooked with herbs and spices - a hearty, flavorful Jamaican classic. </p>
+          <span class="price"> $5.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="sides">
+          <h3> Steamed Cabbage </h3>
+          <p> Tender steamed cabbage with peppers and spices - light, flavorful, and perfectly seasoned. </p>
+          <span class="price"> $5.00 </span>
+        </div>
+      
+        <!-- done-to-order -->
+        <div class="menu-card" data-category="done-to-order">
+          <h3> Brown Stew Fish </h3>
+          <p> Tender fish simmered in a rich, savory brown sauce with bell peppers, onions, and island spices - a true Jamaican comfort dish. Sides are to be added separately. Current price is only for the fish. </p>
+          <span class="price"> $20.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="done-to-order">
+          <h3> Escovitch Fish (Fillet) </h3>
+          <p> Crispy fried fish topped with spicy pickled vegetables - a tangy, flavorful Jamaican favorite steamed in a vingar sauce. Sides are to be added separately. Current price is only for the fish. </p>
+          <span class="price"> $12.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="done-to-order">
+          <h3> Escovitch Fish Whole </h3>
+          <p> Crispy fried fish topped with spicy pickled vegetables - tangy, flavorful Jamaican favorite steamed in a vinegar sauce. Sides are to be added separately. Current price is only for the fish. </p>
+          <span class="price"> $20.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="done-to-order">
+          <h3> Steamed Fish </h3>
+          <p> Delicate fish steamed with fresh herbs and spices - light, flavorful, and perfectly tender. Sides are to be added separately. Current price is only for the fish. </p>
+          <span class="price"> $20.00 </span>
+        </div>
+        
+        <!-- natural beverages -->
+        <div class="menu-card" data-category="natural-beverages">
+          <h3> 16oz. Pink Lemonade </h3>
+          <p> Refreshing Pink Lemonade with a perfect balance of sweet and tart - a cool, fruity classic. </p>
+          <span class="price"> $3.50 </span>
+        </div>
+      
+        <div class="menu-card" data-category="natural-beverages">
+          <h3> 20oz. Pink Lemonade </h3>
+          <p> Refreshing Pink Lemonade with a perfect balance of sweet and tart - a cool, fruity classic. </p>
+          <span class="price"> $5.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="natural-beverages">
+          <h3> Gallon of Pink Lemonade </h3>
+          <p> Refreshing Pink Lemonade with a perfect balance of sweet and tart - a cool, fruity classic. </p>
+          <span class="price"> $17.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="natural-beverages">
+          <h3> 16oz. Pineapple Juice with Ginger </h3>
+          <p> Sweet pineapple juice blended with spicy ginger for a refreshing, zesty tropical drink. </p>
+          <span class="price"> $8.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="natural-beverages">
+          <h3> 20oz. Pineapple Juice with Ginger </h3>
+          <p> Sweet pineapple juice blended with spicy ginger for a refresing, zesty tropical drink. </p>
+          <span class="price"> $10.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="natural-beverages">
+          <h3> Gallon of Pineapple Juice with Giner </h3>
+          <p> Sweet pineapple juice blended with spicy ginger for a refreshing, zesty tropical drink. </p>
+          <span class="price"> $40.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="natural-beverages">
+          <h3> 16oz. Sorrel with Ginger </h3>
+          <p> Vibrant sorrel drink infused with warming ginger - a tangy, festive Jamaican favorite. </p>
+          <span class="price"> $8.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="natural-beverages">
+          <h3> 20oz. Sorrel with Ginger </h3>
+          <p> Vibrant sorrel drink infused with warming ginger - a tangy, festive Jamaican favorite. </p>
+          <span class="price"> $10.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="natural-beverages">
+          <h3> Gallon of Sorrel with Ginger </h3>
+          <p> Vibrant sorrel drink infused with warming ginger - a tangy, festive Jamaican favorite. </p>
+          <span class="price"> $40.00 </p>
+        </div>
+      
+        <div class="menu-card" data-category="natural-beverages">
+          <h3> 16oz. Watermelon Juice with Lemon </h3>
+          <p> Sweet watermelon juice with a citrusy kick - a refreshing and flavorful tropical blend. </p>
+          <span class="price"> $4.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="natural-beverages">
+          <h3> 20oz. Watermelon Juice with Lemon </h3>
+          <p> Sweet watermelon juice with a citrusy kick - a refreshing and flavorful tropical blend. </p>
+          <span class="price"> $6.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="natural-beverages">
+          <h3> Gallon of Watermelon Juice with Lemon </h3>
+          <p> Sweet watermelon juice with a citrusy kick - a refreshing and flavorful tropical blend. </p>
+          <span class="price"> $25.00 </span>
+        </div>
+      
+        <!-- drinks -->
+        <div class="menu-card" data-category="drinks">
+          <h3> Coconut Water </h3>
+          <p> Pure, natural coconut water - light, hydrating, and packed with refreshing tropical flavor. </p>
+          <span class="price"> $3.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="drinks">
+          <h3> Jamaican Soda </h3>
+          <p> Your choice of Cream Soda, Kola Champagne, Ginger Beer, Orange Soda, and Grape Soda. </p>
+          <span class="price"> $3.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="drinks">
+          <h3> Soda </h3>
+          <p> Your choice of Coca-Cola, Diet Coke, Dr. Pepper, and Sprite. </p>
+          <span class="price"> $2.00 </p>
+        </div>
+      
+        <div class="menu-card" data-category="drinks">
+          <h3> Vita Malt </h3>
+          <p> Rich, malty, and slightly sweet Vita Malt - a nourishing and energizing Jamaican classic. </p>
+          <span class="price"> $4.00 </span>
+        </div>
+      
+        <!-- on the side -->
+        <div class="menu-card" data-category="on-the-side">
+          <h3> Brown Stew Chicken Only </h3>
+          <p> Marinated chicken slow-cooked in tomato sauce, onions, and scotch bonnet peppers. </p>
+          <span class="price"> $12.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="on-the-side">
+          <h3> Curry Chicken Only </h3>
+          <p> Chicken in Jamaican curry sauce. </p>
+          <span class="price"> $12.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="on-the-side">
+          <h3> Curry Goat Only </h3>
+          <p> Goat meat stewed in hot Indian sauce - Jamaican style. </p>
+          <span class="price"> $15.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="on-the-side">
+          <h3> Jerk Chicken Only </h3>
+          <p> Chicken quarter soaked in Jamaican jerk seasoning and grilled to perfection. </p>
+          <span class="price"> $12.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="on-the-side">
+          <h3> Jerk Pork Only </h3>
+          <p> Spicy grilled pork shoulder marinated in Jamaican jerk seasoning. </p>
+          <span class="price"> $13.00 </span>
+        </div>
+      
+        <div class="menu-card" data-category="on-the-side">
+          <h3> Oxtail & Beans Only </h3>
+          <p> Fall-off-the-bone oxtail stewed with broad beans. </p>
+          <span class="price"> $18.00 </span>
+        </div>
+      </section>
+      
+      <!-- footer -->
+      <footer class="footer" role="contentinfo">
+        <div class="footer-inner">
+          <div class="footer-col">
+            <h4> JB Fireside </h4>
+            <p> Bringing bold Caribbean flavors to Killeen streets, one plate at a time. </p>
+          </div>
+        
+          <div class="footer-col links">
+            <h4> Pages </h4>
+              <a href="index.html" class="active">
+                <i class="fa-solid fa-house"> </i>
+                Home
+              </a>
+        
+              <a href="about.html">
+                <i class="fa-solid fa-info-circle"> </i>
+                About JB
+              </a>
+        
+              <a href="menu.html">
+                <i class="fa-solid fa-utensils"> </i>
+                JB's Menu
+              </a>
+        
+              <a href="contact.html">
+                <i class="fa-solid fa-envelope"> </i>
+                Contact JB
+              </a>
+        
+              <a href="location.html">
+                <i class="fa-solid fa-map-marker-alt"> </i>
+                Where to Find JB
+              </a>
+          </div>
+        
+          <div class="footer-col socials">
+            <h4> Follow JB </h4>
+            <a href="https://www.instagram.com/jbfireside/">
+              <i class="fa-brands fa-instagram"> </i>
+              Instagram
+            </a>
+    
+            <a href="https://www.facebook.com/profile.php?id=61551356499522">
+              <i class="fa-brands fa-facebook"> </i>
+              Facebook
+            </a>
+    
+            <a href="https://www.tiktok.com/@jbfiresiderestaur">
+              <i class="fa-brands fa-tiktok"> </i>
+              Tiktok
+            </a>
+          </div>
+        </div>
+        
+        <p class="footer-copy"> &copy; <span id="year"> </span> JB Fireside • All rights reserved. </p>
+      </footer>
+    
+      <script src="menu.script.js" defer> </script>
+   </body>
+</html>
