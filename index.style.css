@@ -32,11 +32,6 @@ a {
   gap: .25rem;
 }
 
-.logo img {
-  width: 80px;
-  height: auto;
-}
-
 .nav-links {
   display: flex;
   justify-content: center;
@@ -565,6 +560,7 @@ cta-strip p {
   gap: 2.5rem;
   padding: 2rem 1rem;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 1rem;
 }
 
 .footer-col {
@@ -616,6 +612,7 @@ cta-strip p {
   color: var(--muted);
   text-align: center;
   margin-top: .75rem;
+  margin-bottom: .75rem;
   border-top: 1px solid var(--border);
   padding-top: 1.5rem;
 }
