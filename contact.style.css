@@ -7,6 +7,7 @@
   --accent-2: #41c95b;
   --accent-3: #ffd27f;
   --border: rgba(255, 255, 255, 0.08);
+  --menu-gradient: linear-gradient(135deg, #ff8c00, #ff4500);
 }
 
 body {
@@ -189,7 +190,7 @@ a {
 /* Hero section with gradient background */
 .contact-hero {
   min-height: 50vh;
-  background: linear-gradient(45deg, #ff8c00, #ff3c00, #ffd27f);
+  background: var(--menu-gradient);
   animation: 600% 600%;
   animation: gradientShift 12s ease infinite;
   display: flex;
