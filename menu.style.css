@@ -291,10 +291,16 @@ a {
   transition: background .3s ease, color .3s ease;
 }
 
-.category-btn.active,
-.category-btn:hover {
+.category-btn.active {
   background: var(--accent);
   color: #000;
+}
+
+@media (hover: hover) {
+  .category-btn:hover {
+    background: var(--accent);
+    color: #000;
+  }
 }
 
 /* Menu Grid */
