@@ -58,6 +58,13 @@ function filterMenu(category) {
 // Add click event for filtering
 categoryButtons.forEach(button => {
   button.addEventListener("click", () => {
+    // Remove active class from all buttons
+    categoryButtons.forEach(btn => btn.classList.remove("active"));
+
+    // Highlight the clicked button
+    button.classList.add("active");
+
+    // Filter the menu
     const category = button.dataset.category;
     filterMenu(category);
   });
@@ -66,4 +73,15 @@ categoryButtons.forEach(button => {
 // Show "Main Courses" by default on page load
 document.addEventListener("DOMContentLoaded", () => {
   filterMenu("main-courses");
+
+  // Highlight the default button
+  categoryButtons.forEach(btn => btn.classList.remove("active"));
+
+  const defaultButton = document.querySelector(
+    '.category-btn[data-category="main-courses"]'
+  );
+
+  if (defaultButton) {
+    defaultButton.classList.add("active");
+  }
 });
