@@ -186,6 +186,17 @@ a {
   }
 }
 
+/* menu disclaimer */
+.menu-disclaimer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 2rem auto 1rem;
+  max-width: 800px;
+  padding: 0 1rem;
+}
+
 /* hero */
 .menu-grid {
   display: flex;
